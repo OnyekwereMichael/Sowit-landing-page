@@ -203,7 +203,7 @@ function Home() {
             <div className='px-8 smm:p-[1px] lgg:px-4'>
                 <div className='flex items-center gap-2 bg-[#E9F2FF] text-[#227EFD]  w-[10%] py-2 px-6 rounded-full mt-16 smm:w-[27%] smm:px-0 smm:justify-center xmm:w-[30%] smi:w-[35%] lgg:w-[20%] xll:w-[15%]'>
                     <img src={rocketButton} alt="star" />
-                    <p className='text-sm'>benefits jjj</p>
+                    <p className='text-sm'>benefits</p>
                 </div>
 
                 <div>
