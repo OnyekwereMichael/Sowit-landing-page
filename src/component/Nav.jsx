@@ -41,12 +41,12 @@ useEffect(() => {
 
         {/* mobile navigtion bar  */}
             <div className ={`${nav ? 'show-nav' : ''} toggle  shadow-2xl`}>
-                    <a href="" className='mx-5 font-semibold '>Features</a>
-                    <a href="" className='mx-5 font-semibold '>About Sowwit</a>
-                    <a href="" className='mx-5 font-semibold '>Benefits</a>
-                    <a href="" className='mx-5 font-semibold '>FAQs</a>
-                    <a href="" className='mx-5 font-semibold '>Contact U</a>
-                    <div className='  bg-[#227EFD] border-[#262626]  text-[#FFFFFF] py-[8px] px-[15px] rounded-full text-[14px]  smm:text-[16px] smm:w-[80%] smm:text-center lgg:w-[85%] lgg:text-center'>Join Waitlist</div>
+                    <a href="" className=' font-semibold '>Features</a>
+                    <a href="" className=' font-semibold '>About Sowwit</a>
+                    <a href="" className=' font-semibold '>Benefits</a>
+                    <a href="" className=' font-semibold '>FAQs</a>
+                    <a href="" className=' font-semibold '>Contact U</a>
+                    <div className='  bg-[#227EFD] border-[#262626]  text-[#FFFFFF] py-[8px] px-[15px] rounded-full text-[14px]  smm:text-[16px] smm:w-[60%] smm:text-center lgg:w-[85%] lgg:text-center'>Join Waitlist</div>
                 </div>
 
           {/* ends */}
