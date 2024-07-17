@@ -41,9 +41,8 @@ useEffect(() => {
 
         {/* mobile navigtion bar  */}
             <div className ={`${nav ? 'show-nav' : ''} toggle  shadow-2xl`}>
-                    <a href="" className=' font-semibold '>Features</a>
+                    <a href="" className=' font-semibold'>Features</a>
                     <a href="" className=' font-semibold '>About Sowwit</a>
-                    <a href="" className=' font-semibold '>Benefits</a>
                     <a href="" className=' font-semibold '>FAQs</a>
                     <a href="" className=' font-semibold '>Contact Us</a>
                 </div>
