@@ -32,22 +32,14 @@ useEffect(() => {
            <a href="" className='mx-5 text-[#4F525A] text-[16px]'>FAQs</a>
               <a href="" className='mx-5  text-[#4F525A] text-[16px]'>Contact Us</a>
         </div>
-        <a href='#signup' className='  bg-[#227EFD] border-[#262626]  text-[#FFFFFF] py-[8px] px-[15px] rounded-full text-[14px] smm:hidden lgg:hidden'>Join Waitlist</a>
+        <a href='#signup' className='  bg-[#227EFD] border-[#262626]  text-[#FFFFFF] py-[8px] px-[15px] rounded-full text-[14px] '>Join Waitlist</a>
 
-        <div className='dropdown'>
+        {/* <div className='dropdown'>
            {nav ? <AiOutlineClose  size={32} onClick={() => setNav(!nav)}/> : <AiOutlineMenu  onClick={() => setNav(!nav)} size={32}/>}
-        </div>
+        </div> */}
       </nav>
 
-        {/* mobile navigtion bar  */}
-            <div className ={`${nav ? 'show-nav' : ''} toggle  shadow-2xl`}>
-                    <a href="" className=' font-semibold'>Features</a>
-                    <a href="" className=' font-semibold '>About Sowwit</a>
-                    <a href="" className=' font-semibold '>FAQs</a>
-                    <a href="" className=' font-semibold '>Contact Us</a>
-                </div>
-
-          {/* ends */}
+      
     </div>
   )
 }
