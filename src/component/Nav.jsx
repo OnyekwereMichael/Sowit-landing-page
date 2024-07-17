@@ -45,8 +45,7 @@ useEffect(() => {
                     <a href="" className=' font-semibold '>About Sowwit</a>
                     <a href="" className=' font-semibold '>Benefits</a>
                     <a href="" className=' font-semibold '>FAQs</a>
-                    <a href="" className=' font-semibold '>Contact U</a>
-                    <div className='  bg-[#227EFD] border-[#262626]  text-[#FFFFFF] py-[8px] px-[15px] rounded-full text-[14px]  smm:text-[16px] smm:w-[60%] smm:text-center lgg:w-[50%] lgg:text-center'>Join Waitlist</div>
+                    <a href="" className=' font-semibold '>Contact Us</a>
                 </div>
 
           {/* ends */}
