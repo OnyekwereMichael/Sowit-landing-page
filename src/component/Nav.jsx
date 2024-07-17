@@ -23,7 +23,7 @@ useEffect(() => {
   return (
     <div>
          {/* Navigation Bar */}
-     <nav style={{backgroundColor: `${bgcolor}`}} className='p-4 flex items-center justify-between smm:px-3 shadow-md  fixed w-[100%] z-10 '>
+     <nav style={{backgroundColor: `${bgcolor}`}} className='p-4 flex items-center justify-between smm:px-3 shadow-md  fixed w-[100%]'>
          <img src={SowwitLogo} alt="" />
          <div style={{color: `${textcolor}`}} className='smm:hidden lgg:hidden'>
              <a href="" className='mx-5  text-[#4F525A] text-[16px] '>Features</a>
@@ -40,7 +40,7 @@ useEffect(() => {
       </nav>
 
         {/* mobile navigtion bar  */}
-            <div className ={`${nav ? 'show-nav' : ''} toggle  rounded-lg shadow-2xl`}>
+            <div className ={`${nav ? 'show-nav' : ''} toggle  shadow-2xl`}>
                     <a href="" className='mx-5 font-semibold '>Features</a>
                     <a href="" className='mx-5 font-semibold '>About Sowwit</a>
                     <a href="" className='mx-5 font-semibold '>Benefits</a>

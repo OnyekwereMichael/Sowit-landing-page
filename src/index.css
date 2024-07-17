@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,7 +12,7 @@
 body {
   font-family: "Lexend", sans-serif;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 ::placeholder {
@@ -27,14 +27,14 @@ html{
   position: fixed;
   width: 0%;
   overflow: hidden;
-  background-color: #fffffff7;
+  background-color: #000000fc;
   transition: width 0.3s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  
+  z-index: 10;
 }
 
 .toggle a {
@@ -45,8 +45,8 @@ html{
   height: 13%;
   padding: 15px;
   text-decoration: none;
-  color: #227EFD;
-  text-transform: uppercase;
+  color: #227efd;
+  text-transform: capitalize;
   font-size: 18px;
 }
 
@@ -77,7 +77,7 @@ html{
   animation: slideIn 0.5s forwards 0.5s;
 }
 .show-nav a:nth-child(5) {
-  animation: slideIn 0.5s forwards 0.5s;
+  animation: slideIn 0.5s forwards 0.7s;
 }
 
 /* accordion  */
@@ -94,7 +94,7 @@ input[type="radio"] {
 
 .accordion input[type="radio"]:checked + label + .content {
   max-width: 630px;
-  padding: 0px 10px  100px;
+  padding: 0px 10px 100px;
   font-size: 13px;
 }
 

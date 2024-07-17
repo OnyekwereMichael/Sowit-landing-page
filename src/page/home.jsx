@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
-import arrow from '../assets/arrow.png';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css"; 
+import  arrow from '../assets/arrow.png';
 import star from '../assets/star-magic.png';
 import icon1 from '../assets/Icon 1.png';
 import activeCustomer from '../assets/activeCustomer.png';
@@ -11,7 +13,6 @@ import icon4 from '../assets/icon 4.png';
 import icon9 from '../assets/icon 9.png'
 import insightDemo from '../assets/insight.png'
 import rocketButton from '../assets/rocket-launch.png'
-import { benefit, faq } from '../data/data'
 import profile2 from '../assets/profile2.png'
 import envelop from '../assets/envelope.png'
 import scissor from '../assets/scissors.png'
@@ -24,25 +25,28 @@ import video from '../assets/Video.png'
 import trophy from '../assets/trophy-star.png'
 import customerDashboard from '../assets/customer.png'
 import inventory from '../assets/inventory.png'
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css"; 
+import { benefit, faq } from '../data/data'
 import SwiperNavbutton from "../component/SwiperNavbutton";
 import Accordion from '../component/Accordion'
 import Nav from '../component/Nav'
 import Footer from '../component/Footer'
-function Home() {
-  const getInputValue = () => {
-    let join = document.getElementById('join');
 
-    join.addEventListener('click', () => {
+function Home() {
+  useEffect(() => {
+    const getInputValue = () => {
+      let join = document.getElementById('join');
+
+      join.addEventListener('click', () => {
         let input1 = document.getElementById('input1');
         let input2 = document.getElementById('input2');
         const input1value1 = input1.value;
         localStorage.setItem('storedValue', input1value1);
         input2.value = localStorage.getItem('storedValue');
-    });
-};
+      });
+    };
 
+    getInputValue();
+  }, []);
   return (
     <div>
       <Nav />
@@ -62,9 +66,9 @@ function Home() {
             </p>
             <div className='flex items-center justify-center my-5 mt-5 smm:px-5 xsmm:px-2 xmm:px-1 smi:px-1'>
               <div className="bg-white p-[5px] w-[400px] rounded-full flex items-center justify-between border-[#227EFD] border-[2px] mx-auto smm:p-[8px] smi:[430px]">
-                <input type="text" className="bg-transparent outline-none rounded-xl" placeholder="Enter your email address" id='input1'/>
+                <input type="text" className="bg-transparent outline-none rounded-xl smi:w-[150px] smi:text-xs smm:text-sm xmm:text-sm xsmm:text-sm" placeholder="Enter your email address" id='input1'/>
                 <div className='flex bg-[#227EFD] items-center rounded-full py-[9px] px-[15px] gap-3'>
-                  <a  href ='#signup' className='text-[#FFFFFF] text-[12px] smm:text-[13px] xmm:text-[10px] smi:text-[7px]' id='join' onClick={() => {
+                  <a  href ='#signup' className='text-[#FFFFFF] text-[12px] smm:text-[13px] xmm:text-[10px] smi:text-[9px]' id='join' onClick={() => {
                     getInputValue()
                   }}>Join Waitlist</a>
                   <div>
@@ -159,7 +163,8 @@ function Home() {
             </div>
           </div>
         </section>
-
+       
+       {/* about sowwit  */}
         <section className='flex items-center px-8 smm:px-0'>
             <div className='px-3 smm:px-0'>
                     <div className='flex items-center gap-2 bg-[#FEF2E6] text-[#F77D08] w-[150px]  py-2 px-4 rounded-full mt-16 smm:mx-5 smm:justify-center'>
@@ -193,8 +198,9 @@ function Home() {
          
         </section>
 
-        <section className='bg-[#F7FBFF] px-4 py-1 mt-8 smm:py-[0px]'>
-            <div className='px-8 smm:p-[1px] '>
+   {/* benefit of sowwit  */}
+        <section className='bg-[#F7FBFF] px-4 py-1 mt-8 smm:py-[0px] '>
+            <div className='px-8 smm:p-[1px] lgg:px-4'>
                 <div className='flex items-center gap-2 bg-[#E9F2FF] text-[#227EFD]  w-[10%] py-2 px-6 rounded-full mt-16 smm:w-[27%] smm:px-0 smm:justify-center xmm:w-[30%] smi:w-[35%] lgg:w-[20%] xll:w-[15%]'>
                     <img src={rocketButton} alt="star" />
                     <p className='text-sm'>benefits</p>
@@ -206,7 +212,8 @@ function Home() {
                 </div>
          </div>
           
-          <div className='grid grid-cols-4 justify-center items-center p-8 gap-5   rounded-lg shadow-md  hover:shadow-lg transition-shadow duration-300 smm:hidden lgg:hidden xll:hidden'>
+       
+          <div className='grid grid-cols-4 justify-center items-center p-8 gap-5 rounded-lg shadow-md  hover:shadow-lg transition-shadow duration-300 smm:hidden lgg:hidden xll:hidden'>
                 {benefit.map((item, i) => {
                     return (
                         <div key={i} className='my-5 lgg:my-8'>
@@ -219,8 +226,8 @@ function Home() {
             </div>
 
             {/* mobile screen  */}
-            <Swiper 
-    spaceBetween={1}
+       <Swiper 
+          spaceBetween={1}
           slidesPerView={1}
           breakpoints={{
             540: {
@@ -242,10 +249,10 @@ function Home() {
         {benefit.map((item, index) => {
           return (
             <SwiperSlide>
-                 <div key={index} className='my-5 smm:mb-3 smm:mt-14'>
+                 <div key={index} className='my-5 smm:mb-3 smm:mt-14 lgg:px-4 lgg:pt-6'>
                             <img src={item.img} alt="Icons" />
-                            <h1 className='text-xl font-semibold my-2'>{item.heading}</h1>
-                            <p className='text-[#8E9096 ] text-sm'>{item.paragraph}</p>
+                            <h1 className='text-xl font-semibold my-2 lgg:text-lg '>{item.heading}</h1>
+                            <p className='text-[#8E9096 ] text-sm lgg:text-[13px]'>{item.paragraph}</p>
                      </div>
             </SwiperSlide>
           );
@@ -255,6 +262,7 @@ function Home() {
       </Swiper>
         </section>
 
+{/* FAQ Section  */}
         <section>
         <div className='px-8 smm:px-4'>
                 <div className='flex items-center gap-2 bg-[#EFE9FF] text-[#227EFD]  w-[10%] py-2 px-6 rounded-full mt-16 smm:w-[27%] smm:justify-center xmm:w-[30%] smi:w-[35%] lgg:w-[20%] xll:w-[15%]'>
@@ -289,8 +297,8 @@ function Home() {
   <Accordion />
 </div>
         </section>
-
-      
+ 
+  {/* contact section      */}
         <section className='flex justify-center items-center my-5 smm:px-3 smm:my-10 lgg:px-6 lgg:my-10'>
             <div className='flex justify-between items-center border-[gray] border-solid border-[1px] mx-auto p-2 rounded-lg shadow-md  transition-shadow duration-300 smm:flex-wrap smm:gap-4 lgg:flex-wrap'>
                 <div className='flex  gap-2 items-center'>
@@ -308,6 +316,7 @@ function Home() {
              </div>
         </section>
 
+     {/* joining waitlist  */}
         <section className='flex items-center bg-[#1666D4] px-8 py-[2px] pb-0 smm:px-4 smm:py-[1px] shadow-md smm:flex-wrap lgg:flex-wrap ' id='signup'>
           <div>
             <div className='flex items-center gap-2 bg-[#4b8eec] text-[#fff]  w-[15%] py-2 px-6 rounded-full mt-16 smm:w-[29%] smm:justify-center smi:w-[35%] lgg:w-[20%] xll:w-[15%]'>
@@ -322,7 +331,7 @@ function Home() {
                 </div>
           </div>
 
-
+ {/* wait list form  */}
         <div className='mt-4 p-4 bg-white w-[30%] rounded-xl smm:w-[95%] smm:mx-auto smm:my-6 lgg:w-[90%] lgg:mx-auto xll:w-[90%] xll:mx-auto'>
               <img src={medal} alt="" />
               <div className='my-2'>
