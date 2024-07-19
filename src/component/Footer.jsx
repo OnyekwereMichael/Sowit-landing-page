@@ -1,16 +1,13 @@
 import React from 'react'
-import facebook from '../assets/facebook.png'
-import twitter from '../assets/twitter.png'
-import linkedin from '../assets/linkedin.png'
-import instagram from '../assets/instagram.png'
-import SowwitLogo from '../assets/sowwitLogo.png';
+import facebook from '../assets/facebook.svg'
+import twitter from '../assets/twitter.svg'
+import linkedin from '../assets/linkedin.svg'
+import instagram from '../assets/instagram.svg'
+import SowwitLogo from '../assets/Logo.svg';
 import topdown from '../assets/topdown.png'
 
 
 function Footer() {
-  const top = () =>{
-    window.scrollTo(0, 0)
-  }
   return (
     <div>
       <footer className='flex flex-col items-center gap-6 mt-10 bg-[#F5F6F8] p-1'>
@@ -29,11 +26,11 @@ function Footer() {
             <p  className='font-semibold'>Contact Us</p>
         </div>
 
-        <p className='my-2 text-[#8E9096]'>&copy; 2024 Sowwit. Inc</p>
+        <p className='my-2 text-[#8E9096] font-Urbanist'>&copy; 2024 Sowwit. Inc</p>
 
       </footer>
-        <div className="flex justify-end px-10 py-2 smm:px-4 bg-[#F5F6F8] ">
-              <a href="" onClick={top}><img src={topdown} alt="" className="w-10 " /></a>
+        <div className="flex justify-end px-10 smm:px-4 bg-[#F5F6F8] ">
+              <a href="#top"><i class="fas fa-arrow-up"></i></a>
             </div>
     </div>
   )

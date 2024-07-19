@@ -1,11 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import SowwitLogo from '../assets/sowwitLogo.png';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import SowwitLogo from '../assets/Logo.svg';
 
 function Nav() {
-const [nav, setNav] = useState(false)
-
-const [bgcolor, Setbgcolor] = useState('transparent')
+const [bgcolor, Setbgcolor] = useState('white')
 const [textcolor, Settextcolor] = useState('white')
 
 useEffect(() => {
@@ -14,7 +11,7 @@ useEffect(() => {
       Setbgcolor('#fff')
       Settextcolor('#000')
     }else{
-      Setbgcolor('transparent')
+      Setbgcolor('white')
       Settextcolor('#fff')
     }
   }
@@ -23,7 +20,7 @@ useEffect(() => {
   return (
     <div>
          {/* Navigation Bar */}
-     <nav style={{backgroundColor: `${bgcolor}`}} className='p-4 flex items-center justify-between smm:px-3 shadow-md  fixed w-[100%] '>
+     <nav style={{backgroundColor: `${bgcolor}`}} className='p-4 flex items-center justify-between smm:px-3 shadow-md  fixed w-[100%] z-10'>
          <img src={SowwitLogo} alt="" />
          <div style={{color: `${textcolor}`}} className='smm:hidden lgg:hidden'>
              <a href="" className='mx-5  text-[#4F525A] text-[16px] '>Features</a>

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,17 +13,19 @@
 
 body {
   font-family: "Lexend", sans-serif;
+  max-width: 100%;
 }
 html {
   scroll-behavior: smooth;
 }
-::placeholder {
+::placeholder, select{
   @apply px-2 text-sm text-[#B5B5B5];
 }
 
 .gradient {
-  background-color: #f5f6f8;
+  @apply rounded-xl;
 }
+
 
 .toggle {
   position: fixed;
@@ -124,7 +128,7 @@ input[type="radio"] {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
   .slides,
   .dropdown {
     display: none;

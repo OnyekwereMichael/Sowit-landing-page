@@ -28,6 +28,12 @@ export default {
       'smi': {'max': '320px'},
       // => @media (max-width: 639px) { ... }
     },
+
+    fontFamily: {
+      Urbanist: ' "Urbanist", sans-serif',
+      Lato: 'Lato", sans-serif'
+    },
+    
     extend: {},
   },
   plugins: [],
