@@ -329,9 +329,9 @@ function Home() {
                     <h1 className='font-semibold text-3xl my-3 text-white smm:text-xl'>Be part of the first to experience<br className='smm:hidden lgg:hidden xll:hidden'/>  the future of business management<br /> with sowwit!</h1>
                     <p className='text-white font-Urbanist'>Join our waitlist for exclusive early access to Sowwit. Transform your business and stay ahead with<br className='smm-hidden lgg:hidden xll:hidden'/> our powerful tools.</p>
                 </div>
-                    <div>
+                    
                         <img src={customerDashboard} alt="" />
-                    </div>
+                    
           </div>
 
  {/* wait list form  */}
