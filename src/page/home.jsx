@@ -100,7 +100,7 @@ function Home() {
             {/* Features Cards */}
             <div className="flex justify-center items-center mt-3">
               <div className='grid grid-cols-3 justify-center lgg:grid-cols-2 gap-5 px-12 py-4 smm:grid-cols-1 smm:px-4'>
-                <div className=' p-3 rounded-3xl fin'>
+                <div className=' p-3 rounded-3xl lin'>
                   <img src={icon1} alt="Client Management Icon" className='mx-auto my-3' />
                   <h1 className='text-black font-Urbanist font-extrabold text-center'>seamless Client Management</h1>
                   <p className='text-center my-2 font-Urbanist'>
@@ -118,7 +118,7 @@ function Home() {
                     <img src={trackboard} alt="Trackboard" />
                   </div>
                 </div>
-                <div className=' p-3 rounded-3xl lgg:w-[87vw] smm:w-[100%]  fin'>
+                <div className=' p-3 rounded-3xl lgg:w-[87vw] smm:w-[100%]  lin'>
                   <img src={icon3} alt="Order Tracking Icon" className='mx-auto my-3' />
                   <h1 className='text-black font-Urbanist font-extrabold text-center'>order Tracking & Management</h1>
                   <p className='text-center my-2 font-Urbanist'>
@@ -133,7 +133,7 @@ function Home() {
  
           {/* Analytics Section */}
           <div className="flex justify-center gap-3 mt-3  px-12 smm:flex-wrap smm:px-5 smm:mt-0 ">
-            <div className='bg-gray-200 px-6 pt-6 rounded-lg shadow-lg smm:my-3'>
+            <div className='lin px-6 pt-6 rounded-3xl  smm:my-3'>
               <div className='flex items-center gap-2 smm:flex-wrap lgg:flex-wrap'>
                 <img src={icon4} alt="Analytics Icon" className='w-14 h-14' />
                 <div>
@@ -149,7 +149,7 @@ function Home() {
             </div>
 
             {/* Inventory Section */}
-            <div className='bg-gray-200 p-6 rounded-lg shadow-lg smm:my-3'>
+            <div className='lin p-6 rounded-3xl smm:my-3'>
               <div className='flex items-center gap-2 smm:flex-wrap lgg:flex-wrap'>
                 <img src={icon9} alt="Inventory Icon" className='w-14 h-14' />
                 <div>

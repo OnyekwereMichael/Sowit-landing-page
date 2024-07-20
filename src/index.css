@@ -20,10 +20,10 @@ html {
 }
 
 .lin {
-  background-image: radial-gradient(circle at bottom, rgba(34, 126, 253, 0.1), #EEEFEF 50%);
+  background-image: radial-gradient(circle at center, rgba(34, 126, 253, 0.12), #EEEFEF 90%);
 }
 .fin {
-  background-image: linear-gradient(to right, rgba(34, 125, 253, 0.05), #EEEFEF 70%);
+  background-image: linear-gradient(to right, rgba(34, 125, 253, 0.08), #EEEFEF 100%);
 }
 /* .tin {
   background-image: linear-gradient(to left, rgba(34, 126, 253, 0.1), #EEEFEF 70%);
