@@ -32,9 +32,6 @@ html {
   @apply px-2 text-sm text-[#B5B5B5];
 }
 
-.gradient {
-  
-}
 
 
 .toggle {
@@ -114,33 +111,15 @@ input[type="radio"] {
   max-height: 130px;
 }
 
-@media screen and (max-width: 1100px) {
-  .toggle a {
-    font-size: 25px;
-    height: 15%;
-    padding: 20px;
-  }
-  .show-nav {
-    width: 50%;
-  }
-}
 
 @media (max-width: 600px) {
   .accordion-container {
     display: block;
   }
-  .show-nav {
-    width: 70%;
-  }
-  .toggle a {
-    font-size: 20px;
-    height: 11%;
-  }
 }
 
 @media screen and (min-width: 1100px) {
-  .slides,
-  .dropdown {
+  .slides {
     display: none;
   }
 }

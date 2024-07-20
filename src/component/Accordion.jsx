@@ -13,7 +13,7 @@ function Accordion() {
           <input type="radio" name='accordion' id={item.id} />
           <label
             htmlFor={item.id}
-            className='flex items-center justify-between p-[10px] font-semibold cursor-pointer label text-white text-[16px]'
+            className='flex items-center justify-between p-[10px] font-semibold cursor-pointer label text-white text-[13px]'
           >
             {item.head}
             <span className='icon'>
@@ -22,7 +22,7 @@ function Accordion() {
             </span>
           </label>
           <div className='content text-[#fff] px-10 '>
-            <p>{item.para}</p>
+            <p >{item.para}</p>
           </div>
         </li>
       </ul>

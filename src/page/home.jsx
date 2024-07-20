@@ -52,12 +52,13 @@ function Home() {
     <div>
       <Nav />
       {/* Main Content */}
-      <main>
+      <main >
         {/* Hero Section */}
-        <section>
-       <div className='gradient py-6 pb-8 bg-gradient-to-t from-[#FFFFFF] to-[#F5F6F8]' id='top'>
+        <section className=''>
+      <div className='px-3 smi:px-1 smm:px-2 xsmm:px-2 xmm:px-2'>
+       <div className='gradient py-6 pb-8 bg-gradient-to-t from-[#FFFFFF] to-[#F5F6F8] rounded-[50px] smm:rounded-[35px] smi:rounded-[25px] xmm:rounded-[35px] xsmm:rounded-[35px]' id='top'>
           <div className='text-center mt-10 smm:px-2 lgg:px-2 smm:mt-4' >
-            <h1 className='text-3xl  smm:text-[24px] smi:text-[18px] lgg:text-[26px] xsmm:text-[22px] mt-20 font-Urbanist font-extrabold'>
+            <h1 className='text-3xl  smm:text-[24px] smi:text-[18px] lgg:text-[26px] xsmm:text-[22px] font-Urbanist font-extrabold mt-14 smi:mt-2 xmm:mt-2 xsmm:mt-3 smm:mt-3'>
               <span className = "text-transparent bg-clip-text bg-gradient-to-r from-[#237FFF] to-[#FF8A39] ">transform</span> and scale your business<br className='lgg:hidden smm:hidden xll:hidden'/> effectively with Sowwit
             </h1>
             <p className='mt-3 smm:text-sm smm:mt-2 smm:px-2 font-Lato'>
@@ -66,7 +67,7 @@ function Home() {
             </p>
             <div className='flex items-center justify-center my-5 mt-5 smm:px-5 xsmm:px-2 xmm:px-1 smi:px-1'>
               <div className="bg-white p-[5px] w-[400px] rounded-full flex items-center justify-between border-[#227EFD] border-[2px] mx-auto smm:p-[8px] smi:[430px]">
-                <input type="text" className="bg-transparent outline-none rounded-xl  font-Urbanist smi:w-[150px] smi:text-xs smm:text-sm xmm:text-sm xsmm:text-sm" placeholder="enter your email address" id='input1'/>
+                <input type="text" className="bg-transparent outline-none rounded-xl  font-Urbanist smi:w-[150px] smi:text-xs smm:text-sm xmm:text-sm xsmm:text-sm px-1" placeholder="enter your email address" id='input1'/>
                 <div className='flex bg-[#227EFD] items-center rounded-full py-[9px] px-[15px] gap-3'>
                   <a  href ='#signup' className='text-[#FFFFFF] text-[12px] smm:text-[13px] xmm:text-[10px] smi:text-[9px]' id='join' onClick={() => {
                     getInputValue()
@@ -77,6 +78,7 @@ function Home() {
                 </div>
               </div>
             </div>
+          </div>
           </div>
 
           {/* Features Section */}
@@ -151,7 +153,7 @@ function Home() {
               <div className='flex items-center gap-2 smm:flex-wrap lgg:flex-wrap'>
                 <img src={icon9} alt="Inventory Icon" className='w-14 h-14' />
                 <div>
-                  <h1 className='text-black  text-xl smm:text-lg lgg:text-lg font-Urbanist font-extrabold'>Advanced Inventory Management</h1>
+                  <h1 className='text-black  text-xl smm:text-lg lgg:text-lg font-Urbanist font-extrabold'>advanced Inventory Management</h1>
                   <p className='text-sm lgg:my-1 font-Urbanist'>
                     Monitor and manage inventory levels in real-time to avoid stockouts and overstocking.
                   </p>
@@ -183,7 +185,7 @@ function Home() {
                                     Sowwit is your all-in-one business management solution designed to streamline and simplify your operations. Whether you're a fashion designer, tailor, or entrepreneur, Sowwit provides powerful tools to manage clients, track orders, and optimize workflows. Our mission is to empower businesses with intuitive and comprehensive solutions, helping you focus on what you do best – creating and innovating. Join us in revolutionizing the way you manage and scale your business, and discover the future of seamless business management with Sowwit.
                                     </p>
                                     <div className='flex bg-[#227EFD] items-center rounded-full py-[9px] px-[15px] gap-3 w-auto my-2 smm:my-3'>
-                                    <a className='text-white text-sm'>Join Waitlist</a>
+                                    <a href='#signup' className='text-white text-sm'>join Waitlist</a>
                                     <img src={arrow} alt="arrow" />
                                     </div>
                                 </div>
@@ -206,7 +208,7 @@ function Home() {
                 </div>
 
                 <div className='px-4'>
-                    <h1 className='text-black font-semibold text-3xl my-3 smm:text-2xl'>unlock the full potential of your<br className='smm:hidden lgg:hidden xll:hidden'/> business</h1>
+                    <h1 className='text-black font-semibold text-3xl my-3 smm:text-2xl smi:text-xl'>unlock the full potential of your<br className='smm:hidden lgg:hidden xll:hidden'/> business</h1>
                     <p className='font-Urbanist'>discover how Sowwit’s powerful features can help transform your business operations and<br className='lgg:hidden smm:hidden xll:hidden'/> drive growth and improved customer retention.</p>
                 </div>
          </div>
@@ -305,7 +307,7 @@ function Home() {
                 <div className='flex  gap-2 items-center lgg:gap-4'>
                         <img src={profile2} alt="Analytics Icon"  />
                         <div>
-                        <h1 className='text-[#25262A]  font-extrabold text-lg'>still have questions?</h1>
+                        <h1 className='text-[#25262A]  font-extrabold text-lg smi:text-[17px]'>still have questions?</h1>
                         <p className='text-sm text-[#25262A] font-Urbanist'>perhaps you didn't find the answer you're looking for; feel free to ask us anything! </p>
                     </div>
                 </div>
@@ -320,13 +322,13 @@ function Home() {
      {/* joining waitlist  */}
         <section className='flex items-center bg-[#1666D4]  py-[2px] pb-0 smm:px-4 smm:py-[1px] smm:flex-wrap lgg:flex-wrap xll:px-4' id='signup'>
           <div>
-            <div className='flex items-center gap-2 bg-[#4b8eec] text-[#fff]  w-[20%] py-2 px-6 mx-8 rounded-full mt-16 smm:w-[45%] smm:justify-center smi:w-[65%] lgg:w-[23%] xll:w-[33%] xsmm:w-[50%] xmm:w-[55%] smi:mx-0 smm:mx-0 xmm:mx-0'>
+            <div className='flex items-center gap-2 bg-[#4b8eec] text-[#fff]  w-[20%] py-2 px-6 mx-8 rounded-full mt-16 smm:w-[45%] smm:justify-center smi:w-[65%] lgg:w-[23%] xll:w-[33%] xsmm:w-[50%] xmm:w-[50%] smi:mx-0 smm:mx-0 xmm:mx-0'>
                     <img src={trophy} alt="star" />
                     <p className='text-sm font-semibold font-Urbanist'>join the waitlist</p>
             </div>
 
                 <div className='px-8 smi:p-2 smm:p-2 xll:p-4 lgg:px-8'>
-                    <h1 className='font-semibold text-3xl my-3 text-white smm:text-xl'>Be part of the first to experience<br className='smm:hidden lgg:hidden xll:hidden'/>  the future of business management<br /> with sowwit!</h1>
+                    <h1 className='font-semibold text-3xl my-3 text-white smm:text-lg smi:text-[15px]'>Be part of the first to experience<br className='smm:hidden lgg:hidden xll:hidden'/>  the future of business management<br /> with sowwit!</h1>
                     <p className='text-white font-Urbanist'>Join our waitlist for exclusive early access to Sowwit. Transform your business and stay ahead with<br className='smm-hidden lgg:hidden xll:hidden'/> our powerful tools.</p>
                 </div>
                     
@@ -344,27 +346,27 @@ function Home() {
                 
                 <div className='my-4'>
                 <div className='grid grid-cols-2 items-center gap-2 smi:grid-cols-1'>
-                  <div className='flex items-center border-[2px] rounded-full p-[10px]  gap-2'>
+                  <div className='flex items-center border-gray-200  border-solid border-[1px] rounded-full p-[10px]  gap-2'>
                       <img src={user} alt="" />
                       <input type="text" placeholder='first name' required className='outline-none border-none bg-transparent text-xs  smm:w-[110px] xmm:w-[110px] xsmm::w-[110px] font-Urbanist'/>
                   </div>
-                  <div className='flex items-center border-[2px] rounded-full p-[10px]  gap-2'>
+                  <div className='flex items-center border-gray-200  border-solid border-[1px]  rounded-full p-[10px]  gap-2'>
                       <img src={user} alt="" />
                       <input type="text" placeholder='last name' required className='outline-none border-none bg-transparent text-xs  smm:w-[110px] xmm:w-[110px]  xsmm::w-[110px] font-Urbanist'/>
                   </div>
               </div>
 
-                <div className='flex items-center border-[2px] rounded-full p-[10px]  gap-2 my-3'>
+                <div className='flex items-center border-gray-200  border-solid border-[1px]  rounded-full p-[10px]  gap-2 my-3'>
                       <img src={businessmail} alt="" />
                       <input type="text" placeholder='your business email' required className='outline-none border-none bg-transparent text-xs w-[200px] font-Urbanist' id='input2'/>
                   </div>
 
-                <div className='flex items-center border-[2px] rounded-full p-[10px]  gap-2 my-3'>
+                <div className='flex items-center border-gray-200  border-solid border-[1px]  rounded-full p-[10px]  gap-2 my-3'>
                       <img src={phone} alt="" />
                       <input type="text" placeholder='your phone number' required className='outline-none border-none bg-transparent text-xs font-Urbanist'/>
                   </div>
 
-                 <div className='flex items-center border-[2px] rounded-full p-[10px] gap-2 my-3'>
+                 <div className='flex items-center border-gray-200  border-solid border-[1px]  rounded-full p-[10px] gap-2 my-3'>
                      <img src={building} alt="" />
                     <select name="" id="" className="w-80 smm:w-full outline-none border-none bg-transparent  font-Urbanist">
                       <option value="" className="outline-none border-none bg-transparent  font-Urbanist">Industry</option>
