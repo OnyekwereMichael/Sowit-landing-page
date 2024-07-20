@@ -55,7 +55,7 @@ function Home() {
       <main>
         {/* Hero Section */}
         <section>
-       <div className='gradient py-6 pb-8 bg-gradient-to-t from-[#FFFFFF] to-[#F5F6F8]' id='top'>
+       <div className='gradient py-6 pb-8 bg-gradient-to-t from-[#FFFFFF] to-[#F5F6F8] rounded-t-lg p-6' id='top'>
           <div className='text-center mt-10 smm:px-2 lgg:px-2 smm:mt-4' >
             <h1 className='text-3xl  smm:text-[24px] smi:text-[18px] lgg:text-[26px] xsmm:text-[22px] mt-20 font-Urbanist font-extrabold'>
               <span className = "text-transparent bg-clip-text bg-gradient-to-r from-[#237FFF] to-[#FF8A39] ">transform</span> and scale your business<br className='lgg:hidden smm:hidden xll:hidden'/> effectively with Sowwit
@@ -70,7 +70,7 @@ function Home() {
                 <div className='flex bg-[#227EFD] items-center rounded-full py-[9px] px-[15px] gap-3'>
                   <a  href ='#signup' className='text-[#FFFFFF] text-[12px] smm:text-[13px] xmm:text-[10px] smi:text-[9px]' id='join' onClick={() => {
                     getInputValue()
-                  }} >Join Waitlist</a>
+                  }} >join Waitlist</a>
                   <div>
                       <img src={arrow} alt="arrow" className='smi-hidden'/>
                   </div>
@@ -83,7 +83,7 @@ function Home() {
           <div className='px-2'>
             <div className='flex justify-center items-center gap-2 bg-[#E9F2FF] text-[#227EFD] mx-auto w-[10%] py-2 px-6 rounded-full mt-16 smm:w-[27%] smm:mt-10 smm:mb-3  xmm:w-[30%] smi:w-[35%] xll:w-[15%]'>
               <img src={star} alt="star" />
-              <p className='text-sm font-Urbanist'>Features</p>
+              <p className='text-sm font-Urbanist'>features</p>
             </div>
             <h1 className='text-center mt-2 text-2xl font-semibold smm:text-[20px] smi:text-[17px]'>
               manage and scale your business<br className='lgg:hidden smm:hidden xll:hidden'/> with Sowwit
@@ -98,7 +98,7 @@ function Home() {
             {/* Features Cards */}
             <div className="flex justify-center items-center mt-3">
               <div className='grid grid-cols-3 justify-center lgg:grid-cols-2 gap-5 px-12 py-4 smm:grid-cols-1 smm:px-4'>
-                <div className='bg-gray-200 p-3 rounded-2xl'>
+                <div className=' p-3 rounded-3xl fin'>
                   <img src={icon1} alt="Client Management Icon" className='mx-auto my-3' />
                   <h1 className='text-black font-Urbanist font-extrabold text-center'>seamless Client Management</h1>
                   <p className='text-center my-2 font-Urbanist'>
@@ -106,7 +106,7 @@ function Home() {
                   </p>
                   <img src={activeCustomer} alt="Active Customer" className='mt-4 mx-auto' />
                 </div>
-                <div className='bg-gray-200 pt-3 rounded-2xl pl-4'>
+                <div className=' pt-3 rounded-3xl pl-4  lin'>
                   <img src={icon2} alt="Invoicing Icon" className='mx-auto my-3' />
                   <h1 className='text-black font-Urbanist font-extrabold text-center px-3'>effortless Invoicing</h1>
                   <p className='text-center my-2 font-Urbanist px-3'>
@@ -116,7 +116,7 @@ function Home() {
                     <img src={trackboard} alt="Trackboard" />
                   </div>
                 </div>
-                <div className='bg-gray-200 p-3 rounded-2xl lgg:w-[87vw] smm:w-[100%]'>
+                <div className=' p-3 rounded-3xl lgg:w-[87vw] smm:w-[100%]  fin'>
                   <img src={icon3} alt="Order Tracking Icon" className='mx-auto my-3' />
                   <h1 className='text-black font-Urbanist font-extrabold text-center'>order Tracking & Management</h1>
                   <p className='text-center my-2 font-Urbanist'>
@@ -311,8 +311,8 @@ function Home() {
                 </div>
 
                 <div className='flex bg-[#227EFD] items-center rounded-full py-[12px] px-[15px] gap-3 mx-10 smm:w-[100%] smm:justify-center lgg:w-[80%] lgg:justify-center lgg:mx-auto lgg:my-1'>
-                  <a className='text-[#FFFFFF] text-[12px] font-Lato font-bold'>Contact Us</a>
                   <img src={envelop} alt="arrow" />
+                  <a className='text-[#FFFFFF] text-[12px] font-Lato font-bold'>Contact Us</a>
                 </div>
              </div>
         </section>
@@ -373,7 +373,7 @@ function Home() {
                 </div>
                 
                   <div className='flex bg-[#227EFD] items-center justify-center rounded-full py-[9px] px-[15px] gap-3  my-3'>
-                    <a  href ='#signup' className='text-[#FFFFFF] text-[14px] smm:text-[13px] xmm:text-[10px] smi:text-[7px] font-Urbanist font-bold' id='join'>Join Waitlist</a>
+                    <a  href ='#signup' className='text-[#FFFFFF] text-[14px] smm:text-[13px] xmm:text-[10px] smi:text-[7px] font-Urbanist font-bold' id='join'>join the waitlist</a>
                     <div>
                         <img src={arrow} alt="arrow" className='smi-hidden'/>
                     </div>

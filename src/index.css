@@ -18,12 +18,22 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+.lin {
+  background-image: radial-gradient(circle at bottom, rgba(34, 126, 253, 0.1), #EEEFEF 50%);
+}
+.fin {
+  background-image: linear-gradient(to right, rgba(34, 125, 253, 0.05), #EEEFEF 70%);
+}
+/* .tin {
+  background-image: linear-gradient(to left, rgba(34, 126, 253, 0.1), #EEEFEF 70%);
+} */
 ::placeholder, select{
   @apply px-2 text-sm text-[#B5B5B5];
 }
 
 .gradient {
-  @apply rounded-xl;
+  
 }
 
 
