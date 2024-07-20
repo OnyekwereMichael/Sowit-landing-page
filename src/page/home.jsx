@@ -55,7 +55,7 @@ function Home() {
       <main>
         {/* Hero Section */}
         <section>
-       <div className='gradient py-6 pb-8 bg-gradient-to-t from-[#FFFFFF] to-[#F5F6F8] rounded-t-lg p-6' id='top'>
+       <div className='gradient py-6 pb-8 bg-gradient-to-t from-[#FFFFFF] to-[#F5F6F8]' id='top'>
           <div className='text-center mt-10 smm:px-2 lgg:px-2 smm:mt-4' >
             <h1 className='text-3xl  smm:text-[24px] smi:text-[18px] lgg:text-[26px] xsmm:text-[22px] mt-20 font-Urbanist font-extrabold'>
               <span className = "text-transparent bg-clip-text bg-gradient-to-r from-[#237FFF] to-[#FF8A39] ">transform</span> and scale your business<br className='lgg:hidden smm:hidden xll:hidden'/> effectively with Sowwit
