@@ -6,7 +6,7 @@ import star from '../assets/star-magic.svg';
 import icon1 from '../assets/Icon (2).svg';
 import activeCustomer from '../assets/activeCustomer.svg';
 import trackboard from '../assets/Group 24.svg';
-import Group2 from '../assets/Order Feature Card.png'
+import Group2 from '../assets/Order Feature Card (1).svg'
 import icon2 from '../assets/Icon (3).svg';
 import icon3 from '../assets/Icon (4).svg';
 import icon4 from '../assets/Icon 4.svg';
