@@ -56,7 +56,7 @@ function Home() {
         {/* Hero Section */}
         <section className=''>
       <div className='px-3 smi:px-1 smm:px-2 xsmm:px-2 xmm:px-2'>
-       <div className='gradient py-6 pb-8 bg-gradient-to-t from-[#FFFFFF] to-[#F5F6F8] rounded-[50px] smm:rounded-[35px] smi:rounded-[25px] xmm:rounded-[35px] xsmm:rounded-[35px]' id='top'>
+       <div className='gradient pt-6 pb-4 bg-gradient-to-t from-[#FFFFFF] to-[#F5F6F8] rounded-[50px] smm:rounded-[35px] smi:rounded-[25px] xmm:rounded-[35px] xsmm:rounded-[35px] ' id='top'>
           <div className='text-center mt-10 smm:px-2 lgg:px-2 smm:mt-4' >
             <h1 className='text-3xl  smm:text-[24px] smi:text-[18px] lgg:text-[26px] xsmm:text-[22px] font-Urbanist font-extrabold mt-14 smi:mt-2 xmm:mt-2 xsmm:mt-3 smm:mt-3'>
               <span className = "text-transparent bg-clip-text bg-gradient-to-r from-[#237FFF] to-[#FF8A39] ">transform</span> and scale your business<br className='lgg:hidden smm:hidden xll:hidden'/> effectively with Sowwit
@@ -66,7 +66,7 @@ function Home() {
               help you manage and scale your business once we launch publicly!
             </p>
             <div className='flex items-center justify-center my-5 mt-5 smm:px-5 xsmm:px-2 xmm:px-1 smi:px-1'>
-              <div className="bg-white p-[5px] w-[400px] rounded-full flex items-center justify-between border-[#227EFD] border-[2px] mx-auto smm:p-[8px] smi:[430px]">
+              <div className="bg-white p-[5px] w-[400px] rounded-full flex items-center justify-between border-[#227EFD] border-[3px] mx-auto smm:p-[8px] smi:[430px]">
                 <input type="text" className="bg-transparent outline-none rounded-xl  font-Urbanist smi:w-[150px] smi:text-xs smm:text-sm xmm:text-sm xsmm:text-sm px-1" placeholder="enter your email address" id='input1'/>
                 <div className='flex bg-[#227EFD] items-center rounded-full py-[9px] px-[15px] gap-3'>
                   <a  href ='#signup' className='text-[#FFFFFF] text-[12px] smm:text-[13px] xmm:text-[10px] smi:text-[9px]' id='join' onClick={() => {
@@ -85,7 +85,7 @@ function Home() {
           <div className='px-2'>
             <div className='flex justify-center items-center gap-2 bg-[#E9F2FF] text-[#227EFD] mx-auto w-[10%] py-2 px-6 rounded-full mt-16 smm:w-[27%] smm:mt-10 smm:mb-3  xmm:w-[30%] smi:w-[35%] xll:w-[15%]'>
               <img src={star} alt="star" />
-              <p className='text-sm font-Urbanist'>features</p>
+              <p className='text-sm font-Urbanist font-semibold'>features</p>
             </div>
             <h1 className='text-center mt-2 text-2xl font-semibold smm:text-[20px] smi:text-[17px]'>
               manage and scale your business<br className='lgg:hidden smm:hidden xll:hidden'/> with Sowwit
@@ -167,21 +167,21 @@ function Home() {
         </section>
        
        {/* about sowwit  */}
-        <section className='flex items-center px-8 smm:px-0'>
+        <section className='flex items-center  px-8 smm:px-0'>
             <div className='px-3 smm:px-0'>
                     <div className='flex items-center gap-2 bg-[#FEF2E6] text-[#F77D08] w-[150px]  py-2 px-4 rounded-full mt-16 smm:mx-5 smm:justify-center'>
                         <img src={scissor} alt="star" />
                         <p className='text-sm font-Urbanist font-semibold'>about sowwit</p>
              </div>
 
-                    <section className='flex items-center justify-center mx-auto'>
-                            <div className='mx-auto px-3'>
+                    <section className='flex items-center justify-center mx-auto '>
+                            <div className='mx-auto '>
                                 <div className='flex  lg:flex-row items-center justify-between gap-8 smm:flex-wrap smm:px-4 lgg:flex-wrap xll:flex-wrap'>
                                 <div className='flex flex-col items-start'>
                                     <h1 className='text-black font-semibold text-3xl my-3 smm:text-2xl'>
                                     so what’s the deal — what really<br className='smm:hidden lgg:hidden xll:hidden' /> is Sowwit?
                                     </h1>
-                                    <p className='max-w-[700px] text-[#8E9096]  font-Urbanist'>
+                                    <p className='max-w-[900px] text-[#8E9096]  font-Urbanist'>
                                     Sowwit is your all-in-one business management solution designed to streamline and simplify your operations. Whether you're a fashion designer, tailor, or entrepreneur, Sowwit provides powerful tools to manage clients, track orders, and optimize workflows. Our mission is to empower businesses with intuitive and comprehensive solutions, helping you focus on what you do best – creating and innovating. Join us in revolutionizing the way you manage and scale your business, and discover the future of seamless business management with Sowwit.
                                     </p>
                                     <div className='flex bg-[#227EFD] items-center rounded-full py-[9px] px-[15px] gap-3 w-auto my-2 smm:my-3'>
@@ -190,7 +190,7 @@ function Home() {
                                     </div>
                                 </div>
                                 <div className=' flex justify-center items-center'>
-                                    <img src={video} alt="Sowwit video" className='h-72 ' />
+                                    <img src={video} alt="Sowwit video" className=' ' />
                                 </div>
                                 </div>
                             </div>
@@ -268,7 +268,7 @@ function Home() {
 {/* FAQ Section  */}
         <section>
         <div className='px-8 smm:px-4'>
-                <div className='flex items-center gap-2 bg-[#EFE9FF] text-[#227EFD]  w-[10%] py-2 px-6 rounded-full mt-16 smm:w-[27%] smm:justify-center xmm:w-[30%] smi:w-[35%] lgg:w-[15%] xll:w-[12%]'>
+                <div className='flex items-center gap-2 bg-[#EFE9FF] text-[#227EFD]  w-[9%] py-2 px-6 rounded-full mt-16 smm:w-[27%] smm:justify-center xmm:w-[30%] smi:w-[35%] lgg:w-[15%] xll:w-[12%]'>
                     <img src={Faq} alt="star" />
                     <p className='text-sm text-[#6F5DE6]'>FAQS</p>
                 </div>
