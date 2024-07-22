@@ -337,7 +337,7 @@ function Home() {
           </div>
 
  {/* wait list form  */}
-        <div className='mt-4 p-4 bg-white w-[30%] rounded-xl smm:w-[95%] smm:mx-auto smm:my-6 lgg:w-[45%]  xll:w-[60%] '>
+        <div className='mt-4 p-4 bg-white w-[30%] rounded-3xl smm:w-[95%] smm:mx-auto smm:my-6 lgg:w-[45%]  xll:w-[60%] '>
               <img src={medal} alt="" />
               <div className='my-2'>
                 <h1 className='font-semibold text-xl'>sign up for early access</h1>
