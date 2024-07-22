@@ -169,10 +169,10 @@ function Home() {
        {/* about sowwit  */}
         <section className='flex items-center  px-8 smm:px-0'>
             <div className='px-3 smm:px-0'>
-                    <div className='flex items-center gap-2 bg-[#FEF2E6] text-[#F77D08] w-[150px]  py-2 px-4 rounded-full mt-16 smm:mx-5 smm:justify-center'>
+                    <div className='flex items-center gap-2 bg-[#FEF2E6] text-[#F77D08] w-[150px]  py-2 px-4 rounded-full mt-16 smm:mx-3 smm:justify-center'>
                         <img src={scissor} alt="star" />
                         <p className='text-sm font-Urbanist font-semibold'>about sowwit</p>
-             </div>
+                  </div>
 
                     <section className='flex items-center justify-center mx-auto '>
                             <div className='mx-auto '>
