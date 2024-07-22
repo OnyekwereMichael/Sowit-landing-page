@@ -75,7 +75,8 @@ input[type="radio"] {
   display: none;
 }
 
-.accordion input[type="radio"]:checked + label + .content {
+
+.accordion input[type="checkbox"]:checked + label + .content {
   max-width: 630px;
   padding: 0px 10px 100px;
   font-size: 13px;
@@ -84,19 +85,16 @@ input[type="radio"] {
 .accordion-container {
   display: none;
 }
-.accordion .icon {
-  transition: transform 0.3s;
-}
 
-.accordion input[type="radio"] {
+.accordion input[type="checkbox"] {
   display: none;
 }
 
-.accordion input[type="radio"]:checked ~ label .icon .fa-plus {
+.accordion input[type="checkbox"]:checked ~ label .icon .fa-plus {
   display: none;
 }
 
-.accordion input[type="radio"]:checked ~ label .icon .fa-minus {
+.accordion input[type="checkbox"]:checked ~ label .icon .fa-minus {
   display: inline;
 }
 
@@ -108,7 +106,7 @@ input[type="radio"] {
   display: none;
 }
 
-.accordion input[type="radio"]:checked ~ .content {
+.accordion input[type="checkbox"]:checked ~ .content {
   max-height: 130px;
 }
 

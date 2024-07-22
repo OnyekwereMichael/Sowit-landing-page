@@ -25,7 +25,7 @@ export default {
       'xmm': {'max': '375px'},
 
 
-      'smi': {'max': '320px'},
+      'smi': {'max': '344px'},
       // => @media (max-width: 639px) { ... }
     },
 

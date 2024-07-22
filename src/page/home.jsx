@@ -24,7 +24,7 @@ import businessmail from '../assets/businessmail.svg'
 import video from '../assets/Video.png'
 import trophy from '../assets/trophy-star.svg'
 import customerDashboard from '../assets/App Screenshot (1).png'
-import inventory from '../assets/Group 26.svg'
+import inventory from '../assets/inventory.svg'
 import Faq from '../assets/flask-round.svg'
 import { benefit, faq } from '../data/data'
 import SwiperNavbutton from "../component/SwiperNavbutton";
@@ -66,7 +66,7 @@ function Home() {
               help you manage and scale your business once we launch publicly!
             </p>
             <div className='flex items-center justify-center my-5 mt-5 smm:px-5 xsmm:px-2 xmm:px-1 smi:px-1'>
-              <div className="bg-white p-[5px] w-[400px] rounded-full flex items-center justify-between border-[#227EFD] border-[3px] mx-auto smm:p-[8px] smi:[430px]">
+              <div className="bg-white p-[5px] w-[400px] rounded-full flex items-center justify-between border-[#227EFD] border-[3px] mx-auto smm:p-[8px] smi:[430px]smm:border-[2px] smi:border-[2px] xmm:border-[2px] xsmm:border-[2px]">
                 <input type="text" className="bg-transparent outline-none rounded-xl  font-Urbanist smi:w-[150px] smi:text-xs smm:text-sm xmm:text-sm xsmm:text-sm px-1" placeholder="enter your email address" id='input1'/>
                 <div className='flex bg-[#227EFD] items-center rounded-full py-[9px] px-[15px] gap-3'>
                   <a  href ='#signup' className='text-[#FFFFFF] text-[12px] smm:text-[13px] xmm:text-[10px] smi:text-[9px]' id='join' onClick={() => {
@@ -83,7 +83,7 @@ function Home() {
 
           {/* Features Section */}
           <div className='px-2'>
-            <div className='flex justify-center items-center gap-2 bg-[#E9F2FF] text-[#227EFD] mx-auto w-[10%] py-2 px-6 rounded-full mt-16 smm:w-[27%] smm:mt-10 smm:mb-3  xmm:w-[30%] smi:w-[35%] xll:w-[15%]'>
+            <div className='flex justify-center items-center gap-2 bg-[#E9F2FF] text-[#227EFD] mx-auto w-[10%] py-2 px-6 rounded-full mt-16 smm:w-[30%] smm:mt-10 smm:mb-3  xmm:w-[32%] smi:w-[38%] xll:w-[17%]'>
               <img src={star} alt="star" />
               <p className='text-sm font-Urbanist font-semibold'>features</p>
             </div>
@@ -108,17 +108,17 @@ function Home() {
                   </p>
                   <img src={activeCustomer} alt="Active Customer" className='mt-4 mx-auto' />
                 </div>
-                <div className=' pt-3 rounded-3xl pl-4  lin'>
-                  <img src={icon2} alt="Invoicing Icon" className='mx-auto my-3' />
-                  <h1 className='text-black font-Urbanist font-extrabold text-center px-3'>effortless Invoicing</h1>
-                  <p className='text-center my-2 font-Urbanist px-3'>
-                    Create and manage invoices effortlessly to speed up billing and improve cash flow.
-                  </p>
-                  <div className='mt-4 flex justify-end rounded-xl '>
-                    <img src={trackboard} alt="Trackboard" />
-                  </div>
+                <div className="pt-3 rounded-3xl pl-4 lin flex flex-col ">
+                    <img src={icon2} alt="Invoicing Icon" className="mx-auto my-3" />
+                      <h1 className="text-black font-Urbanist font-extrabold text-center px-3">Effortless Invoicing</h1>
+                      <p className="text-center my-2 font-Urbanist px-3">
+                          Create and manage invoices effortlessly to speed up billing and improve cash flow.
+                      </p>
+                    <div className="mt-auto flex justify-end rounded-xl">
+                        <img src={trackboard} alt="Trackboard" />
+                    </div>
                 </div>
-                <div className=' p-3 rounded-3xl lgg:w-[87vw] smm:w-[100%]  lin'>
+                <div className='p-3 rounded-3xl lgg:w-[87vw] smm:w-[100%]  lin'>
                   <img src={icon3} alt="Order Tracking Icon" className='mx-auto my-3' />
                   <h1 className='text-black font-Urbanist font-extrabold text-center'>order Tracking & Management</h1>
                   <p className='text-center my-2 font-Urbanist'>

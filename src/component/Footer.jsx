@@ -4,7 +4,7 @@ import twitter from '../assets/twitter.svg'
 import linkedin from '../assets/linkedin.svg'
 import instagram from '../assets/instagram.svg'
 import SowwitLogo from '../assets/Logo.svg';
-import topdown from '../assets/topdown.png'
+
 
 
 function Footer() {

@@ -9,8 +9,8 @@ function Accordion() {
         className='accordion mx-auto flex items-center justify-center flex-col lgg:w-[500px] smm:w-[380px] xsmm:w-[358px] xmm:w-[340px] smi:w-[300px]'
         key={i}
       >
-        <li className='w-[100%] m-[15px] p-[13px] rounded-[8px] bg-[#1A1A1A]'>
-          <input type="radio" name='accordion' id={item.id} />
+        <li className='w-[100%] m-[11px] p-[10px] rounded-[8px] bg-[#1A1A1A]'>
+          <input type="checkbox" name='accordion' id={item.id} />
           <label
             htmlFor={item.id}
             className='flex items-center justify-between p-[10px] font-semibold cursor-pointer label text-white text-[13px]'
