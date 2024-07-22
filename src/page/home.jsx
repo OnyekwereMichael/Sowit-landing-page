@@ -200,9 +200,9 @@ function Home() {
         </section>
 
    {/* benefit of sowwit  */}
-        <section className='bg-[#F7FBFF]  py-1 mt-8 smm:py-[0px] '>
+        <section className='bg-[#F7FBFF]  py-1 mt-8 smm:py-[0px]'>
             <div className='px-8 smm:p-[1px] lgg:px-4 xll:px-4'>
-                <div className='flex items-center gap-2 bg-[#E9F2FF] text-[#227EFD]  w-[10%] py-2 px-6 rounded-full mt-16 smm:w-[27%] smm:px-0 smm:justify-center xmm:w-[30%] smi:w-[35%] lgg:w-[20%] xll:w-[15%] mx-4'>
+                <div className='flex items-center gap-2 bg-[#E9F2FF] text-[#227EFD]  w-[10%] py-2 px-6 rounded-full mt-16 smm:w-[27%] smm:px-0 smm:justify-center xmm:w-[30%] smi:w-[35%] lgg:w-[16%] xll:w-[13%] mx-4'>
                     <img src={rocketButton} alt="star" />
                     <p className='text-sm font-Urbanist font-semibold'>benefits</p>
                 </div>
@@ -252,7 +252,7 @@ function Home() {
         {benefit.map((item, index) => {
           return (
             <SwiperSlide>
-                 <div key={index} className='my-5 smm:mb-3 smm:mt-6 lgg:px-4 lgg:pt-6 xll:px-4 xll:pt-6 '>
+                 <div key={index} className='my-5 smm:mb-3 smm:mt-6 smm:px-4 lgg:px-8 lgg:pt-6 xll:px-8 xll:pt-6 '>
                             <img src={item.img} alt="Icons" />
                             <h1 className='text-2xl font-bold font-Urbanist my-2 lgg:text-lg '>{item.heading}</h1>
                             <p className='text-[#8E9096 ] text-sm lgg:text-[13px]  font-Urbanist '>{item.paragraph}</p>
@@ -268,7 +268,7 @@ function Home() {
 {/* FAQ Section  */}
         <section>
         <div className='px-8 smm:px-4'>
-                <div className='flex items-center gap-2 bg-[#EFE9FF] text-[#227EFD]  w-[10%] py-2 px-6 rounded-full mt-16 smm:w-[27%] smm:justify-center xmm:w-[30%] smi:w-[35%] lgg:w-[20%] xll:w-[15%]'>
+                <div className='flex items-center gap-2 bg-[#EFE9FF] text-[#227EFD]  w-[10%] py-2 px-6 rounded-full mt-16 smm:w-[27%] smm:justify-center xmm:w-[30%] smi:w-[35%] lgg:w-[15%] xll:w-[12%]'>
                     <img src={Faq} alt="star" />
                     <p className='text-sm text-[#6F5DE6]'>FAQS</p>
                 </div>
@@ -278,7 +278,7 @@ function Home() {
                     <p className='font-Urbanist text-[#8E9096]'>here are some of the most popular questions we’ve been asked by other [early] users of<br className='smm:hidden lgg:hidden xll:hidden'/> sowwit and business owners just like you have asked us in the past.</p>
                 </div>
 
-                <div className='grid grid-cols-2 justify-center items-center py-5 gap-5   rounded-lg   duration-300 smm:hidden  lgg:my-6 lgg:p-3'>
+                <div className='grid grid-cols-2 justify-center items-center py-5 gap-5 rounded-lg   duration-300 smm:hidden  lgg:my-6 lgg:gap-6 lgg:py-0' >
                 {faq.map((item, index) => {
                     return (
                  <div key={index} className='my-5'>
@@ -320,15 +320,15 @@ function Home() {
         </section>
 
      {/* joining waitlist  */}
-        <section className='flex items-center bg-[#1666D4]  py-[2px] pb-0 smm:px-4 smm:py-[1px] smm:flex-wrap lgg:flex-wrap xll:px-4' id='signup'>
+        <section className='flex items-center bg-[#1666D4]  py-[2px] pb-0 smm:px-4 smm:py-[1px] smm:flex-wrap  xll:px-4' id='signup'>
           <div>
-            <div className='flex items-center gap-2 bg-[#4b8eec] text-[#fff]  w-[20%] py-2 px-6 mx-8 rounded-full mt-16 smm:w-[45%] smm:justify-center smi:w-[65%] lgg:w-[23%] xll:w-[33%] xsmm:w-[50%] xmm:w-[50%] smi:mx-0 smm:mx-0 xmm:mx-0'>
+            <div className='flex items-center gap-2 bg-[#4b8eec] text-[#fff]  w-[20%] py-2 px-6 mx-8 rounded-full mt-16 smm:w-[45%] smm:justify-center smi:w-[65%] lgg:w-[45%] xll:w-[30%] xsmm:w-[50%] xmm:w-[50%] smi:mx-0 smm:mx-0 xmm:mx-0 xll:mx-3'>
                     <img src={trophy} alt="star" />
                     <p className='text-sm font-semibold font-Urbanist'>join the waitlist</p>
             </div>
 
                 <div className='px-8 smi:p-2 smm:p-2 xll:p-4 lgg:px-8'>
-                    <h1 className='font-semibold text-3xl my-3 text-white smm:text-lg smi:text-[15px]'>Be part of the first to experience<br className='smm:hidden lgg:hidden xll:hidden'/>  the future of business management<br /> with sowwit!</h1>
+                    <h1 className='font-semibold text-3xl my-3 text-white smm:text-lg smi:text-[15px] lgg:text-[20px]'>Be part of the first to experience<br className='smm:hidden lgg:hidden xll:hidden'/>  the future of business management<br className='xll:hidden lgg:hidden'/> with sowwit!</h1>
                     <p className='text-white font-Urbanist'>Join our waitlist for exclusive early access to Sowwit. Transform your business and stay ahead with<br className='smm-hidden lgg:hidden xll:hidden'/> our powerful tools.</p>
                 </div>
                     
@@ -337,7 +337,7 @@ function Home() {
           </div>
 
  {/* wait list form  */}
-        <div className='mt-4 p-4 bg-white w-[30%] rounded-xl smm:w-[95%] smm:mx-auto smm:my-6 lgg:w-[90%] lgg:mx-auto xll:w-[90%] xll:mx-auto'>
+        <div className='mt-4 p-4 bg-white w-[30%] rounded-xl smm:w-[95%] smm:mx-auto smm:my-6 lgg:w-[45%]  xll:w-[60%] '>
               <img src={medal} alt="" />
               <div className='my-2'>
                 <h1 className='font-semibold text-xl'>sign up for early access</h1>

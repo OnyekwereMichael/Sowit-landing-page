@@ -4,7 +4,7 @@ import SowwitLogo from '../assets/Logo.svg';
 function Nav() {
 const [bgcolor, Setbgcolor] = useState('white')
 const [textcolor, Settextcolor] = useState('white')
-const [pos, setPos] = useState('sticky')
+const [pos, setPos] = useState('block')
 
 useEffect(() => {
   const changeColor = () => {
