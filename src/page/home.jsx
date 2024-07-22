@@ -110,7 +110,7 @@ function Home() {
                 </div>
                 <div className="pt-3 rounded-3xl pl-4 lin flex flex-col ">
                     <img src={icon2} alt="Invoicing Icon" className="mx-auto my-3" />
-                      <h1 className="text-black font-Urbanist font-extrabold text-center px-3">Effortless Invoicing</h1>
+                      <h1 className="text-black font-Urbanist font-extrabold text-center px-3">effortless Invoicing</h1>
                       <p className="text-center my-2 font-Urbanist px-3">
                           Create and manage invoices effortlessly to speed up billing and improve cash flow.
                       </p>
