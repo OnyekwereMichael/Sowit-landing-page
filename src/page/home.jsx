@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css"; 
 import  arrow from '../assets/arrow.png';
@@ -31,8 +31,10 @@ import SwiperNavbutton from "../component/SwiperNavbutton";
 import Accordion from '../component/Accordion'
 import Nav from '../component/Nav'
 import Footer from '../component/Footer'
+import Contact from '../component/Contact' 
 
 function Home() {
+  const [contact, setContact] = useState(false)
   useEffect(() => {
     const getInputValue = () => {
       let join = document.getElementById('join');
@@ -48,11 +50,13 @@ function Home() {
 
     getInputValue();
   }, []);
+
+  
   return (
     <div>
       <Nav />
       {/* Main Content */}
-      <main >
+      <main>
         {/* Hero Section */}
         <section className=''>
       <div className='px-3 smi:px-1 smm:px-2 xsmm:px-2 xmm:px-2'>
@@ -312,7 +316,9 @@ function Home() {
                     </div>
                 </div>
 
-                <div className='flex bg-[#227EFD] items-center rounded-full py-[12px] px-[15px] gap-3 mx-10 smm:w-[100%] smm:justify-center lgg:w-[80%] lgg:justify-center lgg:mx-auto lgg:my-1'>
+                <div className='flex bg-[#227EFD] items-center rounded-full py-[12px] px-[15px] gap-3 mx-10 smm:w-[100%] smm:justify-center lgg:w-[80%] lgg:justify-center lgg:mx-auto lgg:my-1' onClick={() => {
+                    setContact(true)
+                  }}>
                   <img src={envelop} alt="arrow" />
                   <a className='text-[#FFFFFF] text-[12px] font-Lato font-bold'>Contact Us</a>
                 </div>
@@ -388,6 +394,7 @@ function Home() {
         </section>
       </main>
       <Footer />
+      {contact ? < Contact closeModal = {setContact}/> : ''}
     </div>
   );
 }
