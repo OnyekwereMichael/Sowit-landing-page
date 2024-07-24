@@ -316,7 +316,7 @@ function Home() {
                     </div>
                 </div>
 
-                <div className='flex bg-[#227EFD] items-center rounded-full py-[12px] px-[15px] gap-3 mx-10 smm:w-[100%] smm:justify-center lgg:w-[80%] lgg:justify-center lgg:mx-auto lgg:my-1' onClick={() => {
+                <div className='flex bg-[#227EFD] items-center rounded-full py-[12px] px-[15px] gap-3 mx-10 smm:w-[100%] smm:justify-center lgg:w-[80%] lgg:justify-center lgg:mx-auto lgg:my-1 cursor-pointer' onClick={() => {
                     setContact(true)
                   }}>
                   <img src={envelop} alt="arrow" />

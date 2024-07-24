@@ -7,6 +7,7 @@ function Contact({closeModal}) {
 
     const sendEmail = (e) => {
       e.preventDefault();
+      e.target.reset
   
       emailjs
         .sendForm('service_2a3nvfj', 'template_2pf78fg', form.current, {
@@ -26,9 +27,11 @@ function Contact({closeModal}) {
     <div className='flex justify-center mx-auto items-center p-6'>
         <form ref={form} onSubmit={sendEmail} className='flex flex-col modalbg w-[100vw]'>
         <div className='bg-white flex-col flex p-4 rounded-3xl smm:w-[90vw]'>
-            <button onClick={() => {
-                closeModal(false)
-            }} className='flex  items-center justify-end'>X</button>
+            <div className='flex justify-end'>
+                <button onClick={() => {
+                    closeModal(false)
+                }} className='flex  items-center justify-center bg-black text-white p-3 rounded-3xl w-[30px] h-[30px] text-center'>X</button>
+            </div>
         <label className='text-sm my-2 font-semibold text-[#333333]'>Name</label>
         <input type="text" name="user_name"  className='p-[13px] border-[1px] border-solid border-black w-[400px] rounded-xl text-sm outline-none smm:w-[320px] xsmm:w-[310px] xmm:w-[310px] smi:w-[250px]'/>
         <label className='text-sm my-2 font-semibold text-[#333333]'>Email</label>
