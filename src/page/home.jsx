@@ -87,7 +87,7 @@ function Home() {
 
           {/* Features Section */}
           <div className='px-2'>
-            <div className='flex justify-center items-center gap-2 bg-[#E9F2FF] text-[#227EFD] mx-auto w-[10%] py-2 px-6 rounded-full mt-16 smm:w-[30%] smm:mt-10 smm:mb-3  xmm:w-[32%] smi:w-[38%] xll:w-[17%]'>
+            <div className='flex justify-center items-center gap-2 bg-[#E9F2FF] text-[#227EFD] mx-auto w-[10%] py-2 px-6 rounded-full mt-16 smm:w-[30%] smm:mt-10 smm:mb-3  xmm:w-[31%] smi:w-[36%] xll:w-[16%]'>
               <img src={star} alt="star" />
               <p className='text-sm font-Urbanist font-semibold'>features</p>
             </div>

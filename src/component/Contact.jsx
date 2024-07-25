@@ -7,7 +7,7 @@ function Contact({closeModal}) {
 
     const sendEmail = (e) => {
       e.preventDefault();
-      e.target.reset
+      e.target.reset()
   
       emailjs
         .sendForm('service_2a3nvfj', 'template_2pf78fg', form.current, {
