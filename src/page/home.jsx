@@ -46,7 +46,7 @@ function Home() {
               help you manage and scale your business once we launch publicly!
             </p>
             <div className='flex items-center justify-center my-5 mt-5 smm:px-5 xsmm:px-2 xmm:px-1 smi:px-1'>
-              <div className="bg-white p-[5px] w-[400px] rounded-full flex items-center justify-between border-[#227EFD] border-[2px] mx-auto smm:p-[8px] smi:[430px]">
+              <div className="bg-white p-[5px] w-[400px] rounded-full flex items-center justify-between border-[#227EFD] border-[2px] mx-auto smm:p-[5px] smi:[430px]">
                 <input type="text" className="bg-transparent outline-none rounded-xl  font-Urbanist smi:w-[150px] smi:text-xs smm:text-sm xmm:text-sm xsmm:text-sm px-1" placeholder="enter your email address" id='input1'/>
                 <div className='flex bg-[#227EFD] items-center rounded-full py-[9px] px-[15px] gap-3'>
                   <a  href ='#signup' className='text-[#FFFFFF] text-[12px] smm:text-[13px] xmm:text-[10px] smi:text-[9px]' id='join' onClick={() => {
