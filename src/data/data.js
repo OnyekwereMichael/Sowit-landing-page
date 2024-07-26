@@ -1,13 +1,13 @@
-import FaqLogo1 from '../assets/FAQ Icon 1.png'
-import FaqLogo2 from '../assets/FAQ Icon 2.png'
-import FaqLogo3 from '../assets/FAQ Icon 3.png'
-import FaqLogo4 from '../assets/FAQ Icon 4.png'
-import FaqLogo5 from '../assets/FAQ Icon 5.png'
-import FaqLogo6 from '../assets/FAQ Icon 6.png'
-import FaqLogo7 from '../assets/FAQ Icon 7.png'
-import FaqLogo8 from '../assets/FAQ Icon 8.png'
-import FaqLogo9 from '../assets/FAQ Icon 9.png'
-import FaqLogo10 from '../assets/FAQ Icon 10.png'
+import FaqLogo1 from '../assets/FAQ Icon 1.svg'
+import FaqLogo2 from '../assets/FAQ Icon 2.svg'
+import FaqLogo3 from '../assets/FAQ Icon 3.svg'
+import FaqLogo4 from '../assets/FAQ Icon 4.svg'
+import FaqLogo5 from '../assets/FAQ Icon 5.svg'
+import FaqLogo6 from '../assets/FAQ Icon 6.svg'
+import FaqLogo7 from '../assets/FAQ Icon 7.svg'
+import FaqLogo8 from '../assets/FAQ Icon 8.svg'
+import FaqLogo9 from '../assets/FAQ Icon 9.svg'
+import FaqLogo10 from '../assets/FAQ Icon 10.svg'
 import analytic1 from '../assets/analytics1.svg'
 import analytic2 from '../assets/analytics2.svg'
 import analytic3 from '../assets/analytics3.svg'
@@ -62,58 +62,58 @@ export  const benefit = [
 export  const faq = [
 
     {
-        img: FaqLogo10,
+        img: FaqLogo1,
         heading: 'What is Sowwit?',
         paragraph: 'Sowwit is an all-in-one business management solution designed to streamline operations, manage clients, track orders, and optimize workflows for various industries, starting with fashion.',
     },
 
     {
-        img: FaqLogo9,
+        img: FaqLogo2,
         heading: 'Who is Sowwit for?',
         paragraph: 'Sowwit is designed for entrepreneurs, small businesses, and professionals across various industries, including fashion designers, tailors, and other business owners looking to optimize their operations and scale their business.',
     },
 
     {
-        img: FaqLogo1,
+        img: FaqLogo3,
         heading: 'How can Sowwit help my business?',
         paragraph: 'Sowwit automates routine tasks, improves client management, streamlines order tracking, simplifies invoicing, and provides valuable analytics to help grow your business.',
     },
 
     {
-        img: FaqLogo2,
+        img: FaqLogo4,
         heading: 'Is Sowwit easy to use?',
         paragraph: 'Yes, Sowwit is built with a user-friendly interface and intuitive design, making it easy for anyone to navigate and utilize its features without requiring extensive technical knowledge.',
     },
 
     {
-        img: FaqLogo3,
+        img: FaqLogo5,
         heading: 'Can Sowwit grow with my business',
         paragraph: 'Absolutely! Sowwit is designed to scale with your business, offering flexible tools and features that can adapt to your growing needs and increasing demands.',
     },
 
     {
-        img: FaqLogo4,
+        img: FaqLogo6,
         heading: ' Is there a cost to join the waitlist?',
         paragraph: 'No, joining the waitlist is completely free. You’ll get exclusive early access to Sowwit and be among the first to experience its powerful features.',
     },
 
     {
-        img: FaqLogo5,
+        img: FaqLogo7,
         heading: 'What kind of support does Sowwit offer?',
         paragraph: 'Sowwit provides exceptional customer support, including access to a dedicated support team ready to assist you with any issues or questions you may have, ensuring a smooth and efficient experience.',
     },
     {
-        img: FaqLogo6,
+        img: FaqLogo8,
         heading: 'How do I join the waitlist for Sowwit?',
         paragraph: 'Simply fill out the form on our landing page with your name, email, and business information. You’ll receive updates and early access to Sowwit as soon as it’s available.',
     },
     {
-        img: FaqLogo7,
+        img: FaqLogo9,
         heading: 'What industries does Sowwit support?',
         paragraph: 'While Sowwit initially focuses on the fashion industry, our tools and features are versatile enough to support various other industries as we expand our offerings.',
     },
     {
-        img: FaqLogo8,
+        img: FaqLogo10,
         heading: 'How do I get started once Sowwit is available?',
         paragraph: 'Once you’ve joined the waitlist, you’ll receive an invitation with instructions on how to access and set up your Sowwit account. From there, you can start exploring and utilizing Sowwit’s features to manage and grow your business.',
     },

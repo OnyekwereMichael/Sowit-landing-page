@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import SowwitLogo from '../assets/Logo.svg';
 
-function Nav() {
+function Nav({closeModal}) {
 const [bgcolor, Setbgcolor] = useState('white')
 const [textcolor, Settextcolor] = useState('white')
 const [pos, setPos] = useState('block')
@@ -30,7 +30,9 @@ useEffect(() => {
              <a href="" className='mx-5  text-[#4F525A] text-[16px]'>About Sowwit</a>
              <a href="" className='mx-5  text-[#4F525A] text-[16px]'>Benefits</a>
            <a href="" className='mx-5 text-[#4F525A] text-[16px]'>FAQs</a>
-              <a href="" className='mx-5  text-[#4F525A] text-[16px]'>Contact Us</a>
+              <a href="" className='mx-5  text-[#4F525A] text-[16px]' onClick={() => {
+                closeModal(true)
+              }}>Contact Us</a>
         </div>
         <a href='#signup' className='  bg-[#227EFD] border-[#262626]  text-[#FFFFFF] py-[8px] px-[15px] rounded-full text-[14px] '>join Waitlist</a>
 

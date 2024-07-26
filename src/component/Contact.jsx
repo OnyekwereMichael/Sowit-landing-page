@@ -30,8 +30,13 @@ function Contact({closeModal}) {
             <div className='flex justify-end'>
                 <button onClick={() => {
                     closeModal(false)
-                }} className='flex  items-center justify-center bg-black text-white p-3 rounded-3xl w-[30px] h-[30px] text-center'>X</button>
+                }} className='flex  items-center justify-center bg-black text-white p-3 rounded-3xl w-[30px] h-[30px] text-center'>X
+                </button>
             </div>
+            <div>
+                        <h1 className='text-[#25262A]  font-extrabold text-lg smi:text-[17px]'>Contact us</h1>
+                        <p className='text-sm text-[#25262A] font-Urbanist'>perhaps you didn't find the answer you're looking for;<br /> feel free to ask us anything! </p>
+                    </div>
         <label className='text-sm my-2 font-semibold text-[#333333]'>Name</label>
         <input type="text" name="user_name"  className='p-[13px] border-[1px] border-solid border-black w-[400px] rounded-xl text-sm outline-none smm:w-[320px] xsmm:w-[310px] xmm:w-[310px] smi:w-[250px]'/>
         <label className='text-sm my-2 font-semibold text-[#333333]'>Email</label>

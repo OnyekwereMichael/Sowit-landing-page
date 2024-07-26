@@ -7,7 +7,7 @@ import SowwitLogo from '../assets/Logo.svg';
 
 
 
-function Footer() {
+function Footer({closeModal}) {
   return (
     <div>
       <footer className='flex flex-col items-center gap-6 mt-10 bg-[#F5F6F8] p-1'>
@@ -23,7 +23,9 @@ function Footer() {
             <p className='font-semibold'>About Sowwit</p>
             <p  className='font-semibold'>Privacy Policy</p>
             <p  className='font-semibold'>Terms of Use</p>
-            <p  className='font-semibold'>Contact Us</p>
+            <p  className='font-semibold cursor-pointer' onClick={() => {
+                closeModal(true)
+              }}>Contact Us</p>
         </div>
 
         <p className='my-2 text-[#8E9096] font-Urbanist'>&copy; 2024 Sowwit. Inc</p>

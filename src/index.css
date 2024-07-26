@@ -14,7 +14,8 @@
 
 body {
   font-family: "Lexend", sans-serif;
-  max-width: 100%;
+  max-width: 2200px;
+  @apply mx-auto
 }
 html {
   scroll-behavior: smooth;
@@ -117,7 +118,7 @@ input[type="radio"] {
   }
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1300px) {
   .slides {
     display: none;
   }
@@ -125,7 +126,7 @@ input[type="radio"] {
 
 .modalbg{
   height: 100vh;
-  background-color: #1666D4;
+  background-color: #000000c2;
   display: flex;
   justify-content: center;
   align-items: center;
