@@ -23,14 +23,15 @@ useEffect(() => {
   return (
     <div>
          {/* Navigation Bar */}
-     <nav style={{backgroundColor: `${bgcolor}`, position: `${pos}`}}   className='p-4 flex items-center justify-between smm:px-3 w-[100%]  z-10 transition-0.5s'>
+     <nav style={{backgroundColor: `${bgcolor}`, position: `${pos}`}}   className='p-4 flex items-center justify-between sm:px-3 w-[100%]  z-10 transition-0.5s'>
          <img src={SowwitLogo} alt="" />
-         <div style={{color: `${textcolor}`}} className='smm:hidden lgg:hidden'>
+         <div style={{color: `${textcolor}`}} className='sm:hidden lg:hidden'>
              <a href="" className='mx-5  text-[#4F525A] text-[16px] '>Features</a>
              <a href="" className='mx-5  text-[#4F525A] text-[16px]'>About Sowwit</a>
              <a href="" className='mx-5  text-[#4F525A] text-[16px]'>Benefits</a>
            <a href="" className='mx-5 text-[#4F525A] text-[16px]'>FAQs</a>
-              <a href="" className='mx-5  text-[#4F525A] text-[16px]' onClick={() => {
+              <a href="" className='mx-5  text-[#4F525A] text-[16px]' onClick={(e) => {
+                e.preventDefault()
                 closeModal(true)
               }}>Contact Us</a>
         </div>

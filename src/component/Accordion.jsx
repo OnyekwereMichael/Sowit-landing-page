@@ -6,7 +6,7 @@ function Accordion() {
     <div>
     {Accordio.map((item, i) => (
       <ul
-        className='accordion mx-auto flex items-center justify-center flex-col lgg:w-[500px] smm:w-[380px] xsmm:w-[358px] xmm:w-[340px] smi:w-[300px]'
+        className='accordion mx-auto flex items-center justify-center flex-col lg:w-[500px] sm:w-[380px] xsm:w-[358px] xmm:w-[340px] smi:w-[300px]'
         key={i}
       >
         <li className='w-[100%] m-[11px] p-[10px] rounded-[8px] bg-[#1A1A1A]'>

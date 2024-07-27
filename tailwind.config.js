@@ -9,18 +9,18 @@ export default {
       '2xll': {'max': '1535px'},
       // => @media (max-width: 1535px) { ... }
 
-      'xll': {'max': '1279px'},
+      'xlg': {'max': '1279px'},
       // => @media (max-width: 1279px) { ... }
 
-      'lgg': {'max': '1023px'},
+      'lg': {'max': '1023px'},
       // => @media (max-width: 1023px) { ... }
 
       'mdd': {'max': '767px'},
       // => @media (max-width: 767px) { ... }
 
-      'smm': {'max': '639px'},
+      'sm': {'max': '639px'},
 
-      'xsmm': {'max': '400px'},
+      'xsm': {'max': '400px'},
 
       'xmm': {'max': '375px'},
 
